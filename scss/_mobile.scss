@@ -1,0 +1,99 @@
+@include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include mediaMd {
+    slide p{
+        margin-top: 340px;
+        font-size: 50px;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    ul.menu-links {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .menu-links {
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+    }
+}
+
+@include mediaSm {
+    slide p{
+        margin-top: 340px;
+        font-size: 30px;
+    }
+    // HOME PAGE
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main#home {
+        h1 {
+            margin-top: 10vh;
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+    // ABOUT PAGE
+    main#about {
+        h1 {
+            margin-top: 10vh;
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+    // WORK PAGE
+    main#work {
+        h1 {
+            margin-top: 10vh;
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+    // CONTACT PAGE
+    main#contact {
+        h1 {
+            margin-top: 10vh;
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .pimg {
+        background-attachment: scroll;
+    }
+}
